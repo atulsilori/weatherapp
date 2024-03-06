@@ -1,0 +1,32 @@
+{
+  "parser":  "@typescript-eslint/parser",  // ESlint Parser
+  "extends":  [
+    "plugin:react/recommended",  // Select a recommended rule from the @ eslint-plugin-react.
+    "plugin:@typescript-eslint/recommended", // Select a recommended rule from @ typescript-eslint/eslint-plugin.
+    "prettier"
+  ],
+  "parserOptions":  {
+    "ecmaVersion":  2018,  // Help transform the most advanced ECMAScript features.
+    "sourceType":  "module",  // Allow the usage of imports.
+    "ecmaFeatures":  {
+      "jsx":  true  // JSX-compatible
+    }
+  },
+  "rules":  {
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"]
+  },
+  "overrides": [
+    {
+      "files": ["node_modules/*","webpack.config.js", "tsconfig.js", ".babelrc"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ],
+  "settings":  {
+    "react":  {
+      "version":  "detect",  // Tell eslint-plugin-react to automatically detect the latest version of react.
+    }
+  }
+}

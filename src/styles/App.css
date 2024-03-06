@@ -1,0 +1,34 @@
+body,
+html,
+#root {
+  height: 100%;
+}
+
+.maincontainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.infoCard {
+  background-color: cornflowerblue !important;
+}
+
+.temperature,
+.icon {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .search {
+    padding: 20px 15%;
+  }
+
+  .city {
+    padding: 40px 20%;
+  }
+}

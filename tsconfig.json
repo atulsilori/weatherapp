@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    /* paths alias */
+    "paths": {
+      "component/*": ["src/component/*"],
+      "hooks/*": ["src/hooks/*"],
+      "constants/*": ["src/constants/*"],
+      "styles/*": ["src/styles/*"],
+      "typings/*": ["src/typings/*"],
+      "logics/*": ["src/logics/*"],
+      "utils/*": ["src/utils/*"]
+    },
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node"
+  }
+}
